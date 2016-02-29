@@ -5,7 +5,7 @@ ADD . /var/www
 ADD docker/php.ini /usr/local/etc/php/php.ini
 
 # EventStore installation
-ENV ES_VERSION 3.4.0
+ENV ES_VERSION 3.5.0
 
 ADD http://download.geteventstore.com/binaries/EventStore-OSS-Ubuntu-14.04-v$ES_VERSION.tar.gz /tmp/
 RUN tar xfz /tmp/EventStore-OSS-Ubuntu-14.04-v$ES_VERSION.tar.gz -C /opt
